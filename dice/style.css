@@ -1,0 +1,12 @@
+.dice{
+    margin-top: 9px;
+    display: inline-block;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+#allDices{
+    text-align: center;
+    width: 30vw;
+    height: 40px;
+}
