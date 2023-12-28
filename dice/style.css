@@ -5,8 +5,15 @@
     width: 20px;
     height: 20px;
 }
+#mainBlock{
+    text-align: center;
+    padding-top: 40%;
+
+}
+#buttons{
+    display: inline-block;
+}
 #allDices{
     text-align: center;
-    width: 30vw;
     height: 40px;
 }

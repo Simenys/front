@@ -9,14 +9,18 @@
 </head>
 
 <body>
-    <div id="allDices">
-        <div class="dice" style="display: none"><label id="xlabel"></label></div>
-        <div class="dice" style="display: none"><label id="ylabel"></label></div>
-        <div class="dice" style="display: none"><label id="zlabel"></label></div>
-        <br>
+    <div id="mainBlock">
+        <div id="allDices">
+            <div class="dice" style="display: none"><label id="xlabel"></label></div>
+            <div class="dice" style="display: none"><label id="ylabel"></label></div>
+            <div class="dice" style="display: none"><label id="zlabel"></label></div>
+            <br>
+        </div>
+        <div id="buttons">
+            <button type="button" id="rollButton">Roll</button>
+            <button type="button" id="clearButton">Clear</button>
+        </div>
     </div>
-    <button type="button" id="rollButton">Roll</button>
-    <button type="button" id="clearButton">Clear</button>
 
     <script src="index.js"></script>
 </body>
