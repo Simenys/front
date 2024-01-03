@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <label for="">Enter a temperature</label><br>
     <input type="text" id="textBox"><br>
     <label for="">Convert to:</label><br>
+    <!-- Celsius radio button -->
     <input type="radio" name="name" id="cButton">
     <label for="">Celsius</label><br>
+    <!-- Fahrenheit radio button -->
     <input type="radio" name="name" id="fButton">
     <label for="">Fahrenheit</label><br>
-
+    <!-- Submit, reset buttons and result label -->
     <button type="button" id="submitButton">Submit</button>
-    <label for="" id="tempLabel"></label>
+    <button type="button" id="resetButton">Reset</button><br>
+    <p>Result: <label for="" id="tempLabel"></label></p>
+
     <script src="index.js"></script>
 </body>
+
 </html>

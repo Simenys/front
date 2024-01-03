@@ -4,12 +4,16 @@ document.getElementById("submitButton").onclick = function () {
     if (document.getElementById("cButton").checked == true) {
         temp = document.getElementById("textBox").value;
         temp = Number(temp);
-        //temp = toCelsius(temp);
-        temp = temp.toLocaleString(en-US, {style: "unit", unit: "celsius"})
+        temp = toCelsius(temp);
+        
         document.getElementById("tempLabel").innerHTML = `${temp}`;
     }
     else if (document.getElementById("fButton").checked == true) {
+        temp = document.getElementById("textBox").value;
+        temp = Number(temp);
+        temp = toFahrenheit(temp);
 
+        document.getElementById("tempLabel").innerHTML = `${temp}`;
     }
     else {
         document.getElementById("tempLabel").innerHTML = "Select a unit";
@@ -17,12 +21,26 @@ document.getElementById("submitButton").onclick = function () {
 
 }
 
-
-
+// Convertion formulas
 function toCelsius(temp) {
-    return (temp - 32) * (5/9);
+    temp = (temp - 32) * (5/9);
+    temp = temp.toLocaleString(undefined, {style: "unit", unit: "celsius"})
+    return temp;
 }
 
 function toFahrenheit(temp) {
-    return temp * 9 / 5 + 32;
+    temp =  temp * 9 / 5 + 32;
+    temp = temp.toLocaleString(undefined, {style: "unit", unit: "fahrenheit"})
+    return temp;
 }
+
+// Code bellow resets all values
+document.getElementById("resetButton").onclick = function () {
+    document.getElementById("tempLabel").innerHTML = "";
+    document.getElementById("cButton").checked = false;
+    document.getElementById("fButton").checked = false;
+    document.getElementById("textBox").value = "";
+}
+
+
+
